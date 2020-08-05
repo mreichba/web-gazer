@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mason's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+  <nav aria-live="polite" class="navBar">
+    <div class="name">
+      <a class="jumper" href="#bio">Mason Reichbauer</a>
+    </div>
+    <a tabindex="0" role="navigation" class="burgerIcon" id="burger" onkeypress="burgerClick()" onclick="burgerClick()">
+      &#9776; </a>
+    <ul aria-live="polite" class="links" id="links" onclick="burgerClick()" onkeypress="burgerClick()">
+      <li><a class="jumper" href="#bio">About Me</a></li>
+      <li><a class="jumper" href="#portfolio">Portfolio</a></li>
+      <li><a class="jumper" href="#contactMe">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header class="hero">
+      <div class="heroInfo">
+        <h1><span class="accent">Mason Reichbauer</span><br /></h1>
+        <h2><span class="accent2">Full-Stack Engineer</span></h2>
+        <h2><span class="accent2">Cloud Architect</span></h2>
+        <h2><span class="accent2">Gamer</span></h2>
+      </div>
+    </header>
+
+    <section class="bio" id="bio">
+      <h2>About Me</h2>
+      <p>
+        I have always carried a passion in my heart for technology and discovery. My interest in coding
+        specifically was sparked when I saw the movie “Hackers” as a kid, and it seemed like anything was
+        possible with the right code. I have a scientific mind that embraces an order to things, and at the same
+        time a creative side that ventures into the unknown for new and different possibilities. I look forward
+        to working with great programmers because it will help expand on those unknowns, allowing me to see
+        things from other perspectives that I wouldn't have thought of and producing even better results. It's
+        fascinating to see how others handle a problem and work through a puzzle differently. Programming, to
+        me, is an art form in which something is created from nothing and the possibilities are truly endless.
+      </p><br>
+
+      <p>
+        When I'm not writing code you can find me spending time with friends and family, traveling to new
+        places, as well as going to music festivals and concerts. At home I enjoy listening to new music and
+        playing guitar, discovering new shows, and playing games online with friends.
+      </p>
+    </section>
+
+    <section class="project projectOne" id="portfolio">
+      <h2>The Matrix Quiz App</h2>
+      <p>A brief quiz testing your knowledge of The Matrix movies.</p>
+      <img src="images/matrix-app-snapshot.PNG" alt="enter the matrix quiz">
+      <a class='button' target="_blank" href="https://mreichba.github.io/The-Matrix-Quiz/">Demo</a>
+      <a class='button' target="_blank" href="https://github.com/mreichba/The-Matrix-Quiz">Code</a>
+      <p>HTML5, CSS3, JavaScript, JQuery</p>
+    </section>
+
+    <section class="project projectTwo" id="live">
+      <h2>Live Alert</h2>
+      <p>A saftey app that can send alerts to app contacts letting them know your GPS location, name, email, and a
+        safeword in emergency or life threatening situations</p>
+      <img src="images/live-alert-snip.png" alt="live alert app">
+      <a class='button' target="_blank" href="https://live-alert.now.sh/">Demo</a>
+      <a class='button' target="_blank" href="https://github.com/mreichba/Live-Alert-Server">Server-Code</a>
+      <a class='button' target="_blank" href="https://github.com/mreichba/Live-Alert-Client">Client-Code</a>
+
+      <p>React, Babel, JSX, CSS3, Node, Express, PostgreSQL, Chai, Mocha, Supertest</p>
+    </section>
+
+    <section class="project projectThree" id="language">
+      <h2>Language Learning (French)</h2>
+      <p>A flashcard-style app for anyone that wants to learn how speak French</p>
+      <img src="images/LearningLanguage.PNG" alt="Learning language">
+      <a class='button' target="_blank" href="https://mason-austin-learning.now.sh/register">Demo</a>
+      <a class='button' target="_blank"
+        href="https://github.com/mreichba/Spaced-Repitition-French-Server">Server-Code</a>
+      <a class='button' target="_blank"
+        href="https://github.com/mreichba/Spaced-Repitition-French-Client">Client-Code</a>
+      <p>React, Babel, JSX, CSS3, Node, Express, Linked List, PostgreSQL, Chai, Mocha, Supertest</p>
+    </section>
+
+    <section class="project projectFour" id="sly">
+      <h2>Someone Like You (SLY)</h2>
+      <p>A quiz app that utilizes statistics to show how people may not be as differnt from others as they think
+        based on how they answer questions</p>
+      <img src="images/SLY.PNG" alt="coming soon">
+      <a class='button' target="_blank" href="https://someone-like-you.now.sh/">Demo</a>
+      <a class='button' target="_blank" href="https://github.com/mreichba/SLY-API-">Server-Code</a>
+      <a class='button' target="_blank" href="https://github.com/mreichba/SLY-Client-">Client-Code</a>
+      <p>React, Babel, JSX, CSS3, Node, Express, PostgreSQL, Chai, Mocha, Supertest</p>
+    </section>
+  </main>
+
+  <footer id="contactMe">
+    <span class="accent">Contact Me:</span>
+    <div class='contactLinks'>
+      <a class="email" href="mailto:mreichba@mail.usf.edu">
+        <i class="fa fa-envelope"></i>
+        <span class="email">mreichba@mail.usf.edu</span>
+      </a>
+      <a class="linkedIn" target="_blank" href="https://www.linkedin.com/in/mason-reichbauer-145762101/">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a class="github" target="_blank" href="https://github.com/mreichba">
+        <i class="fa fa-github-square"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,345 @@
+* {
+  box-sizing: border-box;
+}
+.accent, .project h2, .bio h2 {
+  font-family: 'Permanent Marker', cursive;
+}
+.accent2 {
+  font-family: 'Permanent Marker', cursive;
+  
+}
+
+html{
+  background-image: url('images/blue-universe-956981.jpg');
+  background-size: contain;
+  background-color: black;
+}
+
+body {
+  font-family: "Open Sans", sans-serif; 
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.hero {
+  display: block;
+  padding: 80px 0 0px;
+}
+
+.heroInfo h2 {
+ font-size: 7vw;
+}
+
+.heroInfo{
+  height: 90vh;
+  margin-top: 10vh;
+  font-size: 5vw;
+}
+
+nav, footer {
+  padding: 1% 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.navBar {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 5px;
+  text-align: right;
+}
+
+.name {
+  margin: 5px;
+  align-self: center;
+  float: left;
+  padding: 0px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  background-image: url('images/Sun\ \(2\).jpg');
+  background-size: cover;
+  /* background: repeating-linear-gradient(#FDF411 20%,#0B8FBE 55%,#C90B6A 85%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.name a {
+  color: white;
+  text-decoration: none;
+}
+
+.burgerIcon {
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  width: 50px;
+  display: inline-block;
+  /* justify-content: space-between; */
+  /* flex-direction: row; */
+  /* justify-content: flex-end; */
+  text-align: center;
+  font-size: 35px;
+}
+
+.burgerIcon:hover {
+  color: rgb(219, 132, 33);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.null {
+  display: none;
+}
+
+li {
+  display: inline;
+  text-align: right;
+}
+
+li a {
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0px auto 30px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 26px;
+  background-image: url('images/Sun\ \(2\).jpg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header img {
+  width: 80%;
+  opacity: .5;
+}
+
+section {
+  min-height: 200px;
+  padding: 5% 0;
+  margin: 10%;
+  background-color: black;
+  border-radius: 25px;
+  box-shadow: 0 0 50px 10px black;
+  opacity: 0.85;
+}
+
+section:nth-child(odd) {
+  background-color: black;
+}
+
+.bio p {
+  text-align: left;
+  margin: 0 auto 0;
+  padding: 0 40px;
+  max-width: 900px;
+  font-size: 16px;
+}
+
+.project img {
+  display: block;
+  margin: 0 auto 0;
+  width: 80%;
+}
+
+.project p {
+  font-size: 16px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto 0;
+}
+
+.project a {
+  padding: 0 20px 0;
+  text-decoration: none;
+}
+
+.project .button {
+  border: 1px solid black;
+  border-radius: 20px;
+  font: bold 16px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.button:hover{
+  background-color: rgb(219, 132, 33);
+}
+
+footer .accent {
+  background-image: url('images/Sun\ \(2\).jpg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+}
+footer {
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  
+}
+.burgerIcon:focus {
+  
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: rgb(219, 132, 33);
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0px;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+footer span {
+  display: inline;
+}
+
+span.email {
+  display: none;
+}
+
+.links a:hover {
+  font-family: 'Permanent Marker', cursive;
+  background-image: url('images/Sun\ \(2\).jpg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ 
+
+/*tablet screen*/
+@media screen and (min-width: 655px) {
+  .bio p, .project p {
+    font-size: 18px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  .project img {
+    display: block;
+    margin: 0 auto 0;
+    width: 80%;
+  }
+ 
+  .name {
+    font-weight: bold;
+    float: left;
+  }
+
+  .heroInfo{
+    max-height: 90vh;
+    margin: 10vh 0;
+    font-size: 5vw;
+  }
+
+  .links {
+    display: inline;
+    justify-content: right;
+    margin: 5px;
+    padding: 0;
+    align-self: center;
+    
+  }
+
+  .burgerIcon {
+    display: none;
+  }
+    
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+  }
+
+  .fa-envelope {
+    display: none;
+  }
+
+  span.email {
+    display: inline;
+    font-size: 20px;
+  }
+
+  .contactLinks {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  footer a {
+    padding-left: 30px;
+  }
+
+}
+
+/*desktop screen*/
+@media screen and (min-width: 900px) {
+  .bio p, .project p {
+    font-size: 20px;
+  }
+
+  .heroInfo h2 {
+    font-size:4vw;
+   }
+
+  .heroInfo{
+    max-height: 100vh;
+    margin-top: 5vh;
+    font-size: 3vw;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  header img {
+    width: 600px;
+    height: 450px;
+    margin: 0px 0 0px;
+  }
+
+  .project img {
+    display: block;
+    margin: 0 auto 0;
+    width: 400px;
+    height: 430px;
+  }
+  
+}
