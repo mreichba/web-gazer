@@ -9,12 +9,13 @@ function burgerClick() {
 
 let pageY = 0;
 let elapsedTimeCounter = 0;
-function gazerClick() {
-  // let gazer = document.getElementById('gazer')
-  //   if (gazer) {
+function gazerStopClick() {
 
-  //   }
-  alert('When activating Web-Gazer please allow a few seconds for it to start. Once it begins, please callibrate by looking at the top of the page and clicking 5 times in the same spot then do the same for the bottom of the page')
+  location.reload(true);
+
+}
+function gazerClick() {
+  alert('When activating Web-Gazer please allow a few seconds for it to start. Once it begins, please callibrate by looking at the top of the page and clicking 5 times in the same spot then do the same for the bottom of the page');
   webgazer.showPredictionPoints(true);
   webgazer.setGazeListener(function (data, elapsedTime) {
     if (data == null) {
@@ -32,9 +33,7 @@ function gazerClick() {
       window.scrollTo(0, pageY);
       pageY -= 250;
     }
-    // console.log(yprediction);
-    // if (yprediction)
-    //   console.log(elapsedTime); //elapsed time is based on time since begin was called
+
   }).begin();
 
 }
