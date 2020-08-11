@@ -15,7 +15,7 @@ function gazerStopClick() {
 
 }
 function gazerClick() {
-  alert('When activating Web-Gazer please allow a few seconds for it to start. Once it begins, please callibrate by looking at the top of the page and clicking 5 times in the same spot then do the same for the bottom of the page');
+  alert('When activating Web-Gazer please allow a few seconds for it to start. Once it begins, you need to callibrate the camera to your eyes by looking at the top of the page and clicking 5 times in the same spot that you are looking at and then do the same for the bottom of the page. The red dot that appears will signify where the program determines that you are looking');
   webgazer.showPredictionPoints(true);
   webgazer.setGazeListener(function (data, elapsedTime) {
     if (data == null) {
